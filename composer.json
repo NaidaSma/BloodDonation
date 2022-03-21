@@ -1,0 +1,6 @@
+{
+    "name": "ibu/blooddonation",
+    "description": "Blood Donation managment system",
+    "license": "Apache2",
+    "require": {}
+}
