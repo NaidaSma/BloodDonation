@@ -1,0 +1,12 @@
+{
+  "name":"ibu/blooddonation",
+    "description": "Blood Donation managment system",
+    "licence":"Apache2",
+    "authors":[
+      {
+        "name":"naidas",
+       
+  }
+ ],
+  "require":{}
+}
