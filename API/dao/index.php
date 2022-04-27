@@ -19,8 +19,8 @@
 		 <form method="POST"action="register.class.php">
 			 <input name="name" placeholder="Name">
 			 <input name="surname" placeholder="Surname">
-			 <input name="birthday" placeholder="Birthday">
-
+			 <input name="birthday" placeholder="Birthday"><br>
+			 <input type="submit">
 		 </form>
 	 </section>
  </body>
