@@ -14,5 +14,14 @@
 		echo "<hr>";
 		echo $_SERVER['SERVER_NAME'];
 	 ?>
+	 <h4>Login</h4>
+	 <section id="register-form">
+		 <form method="POST"action="register.class.php">
+			 <input name="name" placeholder="Name">
+			 <input name="surname" placeholder="Surname">
+			 <input name="birthday" placeholder="Birthday">
+
+		 </form>
+	 </section>
  </body>
 </html>
