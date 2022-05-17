@@ -4,12 +4,47 @@
 <head>
 	<meta charset="utf-8">
 	<title>Blood Donation Managment System</title>
-	<link href="./css/style.css" rel="stylesheet"/>
+	<link href="css/style.css" rel="stylesheet"/>
+	<style>
+	@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
+	body{
+	  font-family: "Raleway", sans-serif;
+	  background-color: white;
+	}
+	ul {
+	  list-style-type: none;
+	  margin: 0;
+	  padding: 0;
+	  overflow: hidden;
+	  background-color: #red;
+	}
+	li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: red;
+}
+	</style>
 </head>
 <body>
+	<ul>
+  <li><a href="#register">Home</a></li>
+  <li><a href="#donate">Donate</a></li>
+  <li><a href="#bloodbanks">Banks</a></li>
+  <li><a href="#news">News</a></li>
+</ul>
 	 <h4>Register</h4>
-	 <section id="register-form">
-		 <form method="POST"action="register.class.php">
+	 <section id="register-form"><a id="register"></a>
+		 <form name="register" method="POST"action="register.class.php">
 			 <input name="name" placeholder="Name">
 			 <input name="surname" placeholder="Surname"><br>
 			 <input name="dateofBirth" placeholder="Date of birth"><br>
@@ -17,22 +52,26 @@
 			 <input type="radio" name="gender" value="Female"/>Female
 			 <input type="radio" name="gender" value="Male"/>Male
 			 <h3>Blood type</h3>
-			 <input type="checkbox" name="bloodtype"/>A+<br>
-			  <input type="checkbox" name="bloodtype"/>A-<br>
-				 <input type="checkbox" name="bloodtype"/>B+<br>
-				  <input type="checkbox" name="bloodtype"/>B-<br>
-					 <input type="checkbox" name="bloodtype"/>0+<br>
-					  <input type="checkbox" name="bloodtype"/>0-<br>
-						 <input type="checkbox" name="bloodtype"/>AB+<br>
-						  <input type="checkbox" name="bloodtype"/>AB-<br>
+			 <select name="bloodtype">
+			 <option value="A+"/>A+</option>
+			 <option value="A-"/>A-</option>
+			 <option value="B+"/>B+</option>
+			 <option value="B-"/>B-</option>
+			 <option value="0+"/>0+</option>
+			 <option value="0-"/>0-</option>
+			 <option value="AB"/>AB+</option>
+			 <option value="BA"/>AB-</option>
+			 <br>
 			 <input name="address" placeholder="Address">
 			 <input name="city" placeholder="City"><br>
 				<input name="telephone" placeholder="Telephone number">
 				<input name="email" placeholder="E-mail"><br>
 				 <input name="password" placeholder="Password"><br>
-			 <input type="button" value="Register">
-
+			 <input type="submit" name="submit" value="Register">
+			  <input type="reset" name="reset" value="Reset">
 		 </form>
 	 </section>
+	 <section id="bloodbanks"><a id="bloodbanks"></a>
+		 
  </body>
 </html>
