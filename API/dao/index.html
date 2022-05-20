@@ -19,7 +19,7 @@
 	  background-color: #red;
 	}
 	li {
-  float: left;
+  float: right;
 }
 
 li a {
@@ -33,15 +33,33 @@ li a {
 li a:hover {
   background-color: red;
 }
+#Home{
+	 background-image: url('Blood donation bg.png');
+	 background-repeat: no-repeat;
+	 background-attachment: fixed;
+ background-size: 100% 100%;
+
+}
+#Home>h1{
+	font-size: 50;
+	color:red;
+}
+#Home>h2{
+	font-size: 30;
+	color:red;
+}
 	</style>
 </head>
 <body>
 	<ul>
-  <li><a href="#register">Home</a></li>
+  <li><a href="#home">Home</a></li>
   <li><a href="#donate">Donate</a></li>
   <li><a href="#bloodbanks">Banks</a></li>
   <li><a href="#news">News</a></li>
 </ul>
+<section id="Home"><a id="home"></a>
+	<h1>Welcome</h1><br>
+	<h2>Give blood and keep the world beating</h2>
 	 <h4>Register</h4>
 	 <section id="register-form"><a id="register"></a>
 		 <form name="register" method="POST"action="register.class.php">
@@ -61,7 +79,6 @@ li a:hover {
 			 <option value="0-"/>0-</option>
 			 <option value="AB"/>AB+</option>
 			 <option value="BA"/>AB-</option>
-			 <br>
 			 <input name="address" placeholder="Address">
 			 <input name="city" placeholder="City"><br>
 				<input name="telephone" placeholder="Telephone number">
